@@ -1,0 +1,65 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="content-header">
+        <picture>
+          <h1>logo</h1>
+        </picture>
+        <nav class="main-menu">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Cadastrar</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <form action="/auth/register" method="post">
+        <div class="content-form">
+          <div class="input input-name">
+            <label for="input-name"></label>
+            <input type="text" id="input-name" placeholder="Name" name="name" />
+          </div>
+          <div class="input input-email">
+            <label for="input-email"></label>
+            <input
+              type="text"
+              id="input-email"
+              placeholder="Email"
+              name="email"
+            />
+          </div>
+          <div class="input input-password">
+            <label for="input-password"></label>
+            <input
+              type="text"
+              id="input-password"
+              placeholder="Password"
+              name="password"
+            />
+          </div>
+          <div class="input input-confirm-pass">
+            <label for="input-confirm-pass"></label>
+            <input
+              type="text"
+              id="input-confirm-pass"
+              placeholder="Confirm Password"
+              name="confirm-pass"
+            />
+          </div>
+          <div class="btn btn-group">
+            <button>Cadastrar</button>
+          </div>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
