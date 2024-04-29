@@ -26,7 +26,12 @@
         <div class="content-form">
           <div class="input input-name">
             <label for="input-name"></label>
-            <input type="text" id="input-name" placeholder="Name" name="name" />
+            <input
+              type="text"
+              id="input-name"
+              placeholder="Name"
+              name="userName"
+            />
           </div>
           <div class="input input-email">
             <label for="input-email"></label>
@@ -34,7 +39,7 @@
               type="text"
               id="input-email"
               placeholder="Email"
-              name="email"
+              name="userEmail"
             />
           </div>
           <div class="input input-password">
@@ -43,7 +48,7 @@
               type="text"
               id="input-password"
               placeholder="Password"
-              name="password"
+              name="userPassword"
             />
           </div>
           <div class="input input-confirm-pass">
@@ -52,7 +57,7 @@
               type="text"
               id="input-confirm-pass"
               placeholder="Confirm Password"
-              name="confirm-pass"
+              name="confirmPass"
             />
           </div>
           <div class="btn btn-group">
@@ -60,6 +65,9 @@
           </div>
         </div>
       </form>
+      {{#if message}}
+        <h4 class="alert">{{message}}</h4>
+      {{/if}}
     </section>
   </body>
 </html>
